@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link href="/static/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div style="margin-top: 250px; margin-left: 350px; position: fixed">
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/><br>
+        <input type="submit"/><br>
+        <p>{{message}}</p>
+      </form>
+    </div>
+    <div id="rectangle" style="width: 300px; height: 1500px; background-color: #2f3136; position: fixed">
+      <div id="stripe_left" style="margin-top: 130px; margin-left: 0px; width: 300px; height: 4px; background-color: #1c1d1e; position: fixed"></div>
+      <div id="stripe_right" style="margin-top: 130px; margin-left: 300px; width: 1920px; height: 4px; background-color: #2a2c30; position: fixed"></div>
+      <h1><a href="/home" style="text-decoration: none; color: #ededee; background-color: #36393f; margin-left: 320px"># Files</a></h1>
+      <h1><a href="/home" style="color: #ededee; margin-left: 18px; margin-top: -165px; font-size: 1.4em; position: fixed; text-decoration: none">UniKameraden</a></h1>
+      <span class="dot" style="width: 31px; height: 31px; margin-top: -206px; margin-left: 236px; background-color: #2f3136; position: fixed"></span>
+      <span class="dot" style="margin-top: -201px; margin-left: 241px; background-color: #45b581; position: fixed"></span>
+    </div>
+    <div style="margin-top: 150px; margin-left: 350px; position: fixed">
+    </div>
+    <div class="avatar" style="margin-top: 50; margin-left: 1770; position: fixed">
+      <img src={{avatar_url}} style="width: 70px; height: 70px; position: fixed; border-radius: 50%">
+    </div>
+    <div class="dropdown" style="margin-top: 50px; margin-left: 1840px; position:fixed; float: right">
+      <button class="dropbtn">
+        <i style="font-size: 3em; font-family: whitney, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">▼</i>
+      </button>
+      <div class="dropdown-content" style="float: right; margin-left: 0px; position: absolute">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="/logout">logout</a>
+      </div>
+    </div>
+    <div style="margin-top: 120px; margin-left: -70px; position: fixed">
+      <ul>
+        <li><a href="/home"># Allgemein</a></li>
+        <li><a href="/profile"># Profil</a></li>
+        <li><a class ="active" href="/files"># Files</a></li>
+        <li><a href="/photos"># Photos</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
